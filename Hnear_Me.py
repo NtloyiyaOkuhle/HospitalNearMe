@@ -29,7 +29,7 @@ google_places = GooglePlaces(API_KEY)
 # type can be HOSPITAL, CAFE, BAR, CASINO, etc
 query_result = google_places.nearby_search(
         # lat_lng ={'lat': 46.1667, 'lng': -1.15},
-        lat_lng ={'lat': 33.9249, 'lng': 18.4241},
+        lat_lng={'lat': int(input("Enter Latitude: ")), 'lng': int(input("Enter Longitude"))},
         radius = 5000,
         # types =[types.TYPE_HOSPITAL] or
         # [types.TYPE_CAFE] or [type.TYPE_BAR]
